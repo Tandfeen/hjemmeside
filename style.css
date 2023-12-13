@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Space+Mono&display=swap');
+/* ----- CSS reset ----- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* ----- Variables ----- */
+:root {
+    --normalFontSize: 1.2em;
+
+    --largeImageSize: 25.1em;
+    --smallImageSize: 8.3em;
+
+    --lightShadow: 3px 3px 10px 3px #dddddd;
+    --darkShadow: 0px 0px 20px 0.5px #8f8f8f;
+}
+
+main {
+    display: flex;
+    
+    height: 95vh;
+    width: 100vw;
+}
+
+
+/* ----- Navigation ----- */
+header {
+    display: flex;
+
+    height: 5vh;
+    width: 100vw;
+    justify-content: space-between;
+
+    /* border: solid; */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    >ul {
+    display: flex;
+    list-style: none;
+
+    >li a {
+        text-decoration: none;
+        font-family: Montserrat;
+        margin-inline: 1em;
+        color: black;
+    }
+  }
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    width: 30vw;
+
+    :nth-last-child(3) {
+        border-left: solid thin;
+        padding-left: 1em;
+    }
+
+    .logo-nav {
+        height: 2.5em;
+        border-radius: 20em;
+        margin-inline: 2em;
+    }
+
+}
+
+.secondary-nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    width: 30vw;
+}
+
+
+/* ----- Left side content ----- */
+.left-side-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 95vh;
+    width: 33%;
+    
+    position: relative;
+    left: 5em;
+
+    font-family: Montserrat;
+
+    >h1 {
+        font-size: 5em;
+        position: relative;
+        bottom: 7vh;
+    }
+
+    .info-text {
+        display: flex;
+        position: relative;
+        bottom: 5vh;
+
+        font-size: 2em;
+        >h2 {font-weight: 200;}
+
+        :nth-child(2) {
+            margin-left: 0.7vw;
+            font-weight: bold;
+        }
+  }
+}
+
+
+/* ----- Center image ----- */
+.center-figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 33%;
+    
+    position: relative;
+    bottom: 5vh;
+
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,0,9,1) 100%);
+    
+    /* border: solid; */
+}
+
+.center-img {
+    position: absolute;
+    object-fit: cover;
+
+    scale: 0.7;
+    transform: rotate(-45deg);
+}
+
+
+/* ----- Right side content ----- */
+.right-side-content {
+    height: 95vh;
+    width: 33%;
+
+    /* border: solid; */
+}
