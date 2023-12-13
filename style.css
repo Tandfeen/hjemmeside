@@ -81,10 +81,26 @@ nav {
 
 .secondary-nav {
     display: flex;
-    align-items: center;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+      
+    width: 35vw;
 
-    width: 30vw;
+    >ul>li {
+        margin-inline: 1.5em;
+
+        >img {
+            position: relative;
+            top: 0.2vh;
+
+            height: 1em;
+        }
+
+        >a {
+            margin: 0;
+        }
+    }
 }
 
 
@@ -98,29 +114,60 @@ nav {
     width: 33%;
     
     position: relative;
-    left: 5em;
+    left: 4em;
 
     font-family: Montserrat;
-
+    
     >h1 {
         font-size: 5em;
+
         position: relative;
-        bottom: 7vh;
+        bottom: 15vh;
+        left: 0.5vw;
+        padding-bottom: 1vh;
+
+
+        align-items: center;
+
+        width: 27vw;
     }
 
     .info-text {
         display: flex;
         position: relative;
-        bottom: 5vh;
+        bottom: 10vh;
+        left: 1em;
 
-        font-size: 2em;
+        font-size: 2.5em;
         >h2 {font-weight: 200;}
 
         :nth-child(2) {
             margin-left: 0.7vw;
             font-weight: bold;
         }
-  }
+    }
+
+    .seperator {
+        position: relative;
+        bottom: 13vh;
+        width: 20vw;
+        left: 3.4vw;
+        border: solid thin gray;
+    }
+
+    >h3 {
+        position: relative;
+        bottom: 8vh;
+        left: 15.5vh;
+        font-size: 2.5em;
+        background-color: red;
+
+        padding: 0.2em;
+
+        width: fit-content;
+        color: white;
+        
+    }
 }
 
 
